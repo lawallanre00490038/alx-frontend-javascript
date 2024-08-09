@@ -1,12 +1,9 @@
-import ClassRoom from "./0-classroom.js";
+import ClassRoom from './0-classroom';
 
-const initializeRooms = () => {
-  const first = new ClassRoom(19);
-  const second = new ClassRoom(20);
-  const third = new ClassRoom(34);
-  const arr = [first, second, third];
-
-  return (arr);
+export default function initializeRooms() {
+  return [
+    new ClassRoom(19),
+    new ClassRoom(20),
+    new ClassRoom(34),
+  ];
 }
-
-export default initializeRooms;
